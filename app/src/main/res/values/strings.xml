@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Score Tracker</string>
+    <string name="out_label">OUT</string>
+    <string name="reset_btn">Reset</string>
+    <string name="team_aus">Australia</string>
+    <string name="default_score">0</string>
+    <string name="overs">Ovs</string>
+    <string name="no_ball">NB</string>
+    <string name="wide">WIDE</string>
+    <string name="dot_ball">DOT</string>
+    <string name="one_run">+1</string>
+    <string name="two_run">+2</string>
+    <string name="three_run">+3</string>
+    <string name="four_run">+4</string>
+    <string name="six_run">+6</string>
+    <string name="team_india">India</string>
+</resources>

@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:fontFamily="sans-serif-medium"
+                    android:text="@string/team_india"
+                    android:textAllCaps="true"
+                    android:textColor="#616161"
+                    android:textSize="18sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal">
+
+                    <TextView
+                        android:id="@+id/teamAscore"
+                        style="@style/PerformanceTextRunStyle"
+                        android:text="@string/default_score" />
+
+                    <TextView
+                        style="@style/PerformanceTextRunStyle"
+                        android:text="-" />
+
+                    <TextView
+                        android:id="@+id/teamAwicket"
+                        style="@style/PerformanceTextRunStyle"
+                        android:text="@string/default_score" />
+
+                    <TextView
+                        android:id="@+id/teamAover"
+                        style="@style/PerformanceTextOverStyle"
+                        android:layout_marginLeft="24dp"
+                        android:text="@string/default_score" />
+
+                    <TextView
+                        style="@style/PerformanceTextOverStyle"
+                        android:text="." />
+
+                    <TextView
+                        android:id="@+id/teamAball"
+                        style="@style/PerformanceTextOverStyle"
+                        android:text="@string/default_score" />
+
+                    <TextView
+                        style="@style/PerformanceTextOverStyle"
+                        android:layout_marginLeft="8dp"
+                        android:text="@string/overs" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="8dp"
+                    android:gravity="center_horizontal">
+
+                    <Button
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:background="@drawable/button_round"
+                        android:onClick="outWicketA"
+                        android:text="@string/out_label" />
+
+                    <Button
+                        style="@style/PerformanceButtonStyle"
+                        android:onClick="wideRunA"
+                        android:text="@string/no_ball" />
+
+                    <Button
+                        style="@style/PerformanceButtonStyle"
+                        android:onClick="wideRunA"
+                        android:text="@string/wide" />
+
+                    <Button
+                        style="@style/PerformanceButtonStyle"
+                        android:onClick="dotBallA"
+                        android:text="@string/dot_ball" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center">
+
+                    <Button
+                        style="@style/PerformanceButtonStyle"
+                        android:onClick="oneRunA"
+                        android:text="@string/one_run" />
+
+                    <Button
+                        style="@style/PerformanceButtonStyle"
+                        android:onClick="twoRunA"
+                        android:text="@string/two_run" />
+
+                    <Button
+                        style="@style/PerformanceButtonStyle"
+                        android:onClick="threeRunA"
+                        android:text="@string/three_run" />
+
+                    <Button
+                        style="@style/PerformanceButtonStyle"
+                        android:onClick="fourRunA"
+                        android:text="@string/four_run" />
+
+                    <Button
+                        style="@style/PerformanceButtonStyle"
+                        android:onClick="sixRunA"
+                        android:text="@string/six_run" />
+
+
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <View
+        android:layout_width="250dp"
+        android:layout_height="1dp"
+        android:layout_gravity="center"
+        android:background="#000000"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:fontFamily="sans-serif-medium"
+                    android:text="@string/team_aus"
+                    android:textAllCaps="true"
+                    android:textColor="#616161"
+                    android:textSize="18sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    tools:context=".MainActivity">
+
+                    <TextView
+                        android:id="@+id/teamBscore"
+                        style="@style/PerformanceTextRunStyle"
+                        android:text="@string/default_score" />
+
+                    <TextView
+                        style="@style/PerformanceTextRunStyle"
+                        android:text="-" />
+
+                    <TextView
+                        android:id="@+id/teamBwicket"
+                        style="@style/PerformanceTextRunStyle"
+                        android:text="@string/default_score" />
+
+                    <TextView
+                        android:id="@+id/teamBover"
+                        style="@style/PerformanceTextOverStyle"
+                        android:layout_marginLeft="24dp"
+                        android:text="@string/default_score" />
+
+                    <TextView
+                        style="@style/PerformanceTextOverStyle"
+                        android:text="." />
+
+                    <TextView
+                        android:id="@+id/teamBball"
+                        style="@style/PerformanceTextOverStyle"
+                        android:text="@string/default_score" />
+
+                    <TextView
+                        style="@style/PerformanceTextOverStyle"
+                        android:layout_marginLeft="8dp"
+                        android:text="@string/overs" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="8dp"
+                    android:gravity="center_horizontal">
+
+                    <Button
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:background="@drawable/button_round"
+                        android:onClick="outWicketB"
+                        android:text="@string/out_label" />
+
+                    <Button
+                        style="@style/PerformanceButtonStyle"
+                        android:onClick="wideRunB"
+                        android:text="@string/no_ball" />
+
+                    <Button
+                        style="@style/PerformanceButtonStyle"
+                        android:onClick="wideRunB"
+                        android:text="@string/wide" />
+
+                    <Button
+                        style="@style/PerformanceButtonStyle"
+                        android:onClick="dotBallB"
+                        android:text="@string/dot_ball" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center">
+
+                    <Button
+                        style="@style/PerformanceButtonStyle"
+                        android:onClick="oneRunB"
+                        android:text="@string/one_run" />
+
+                    <Button
+                        style="@style/PerformanceButtonStyle"
+                        android:onClick="twoRunB"
+                        android:text="@string/two_run" />
+
+                    <Button
+                        style="@style/PerformanceButtonStyle"
+                        android:onClick="threeRunB"
+                        android:text="@string/three_run" />
+
+                    <Button
+                        style="@style/PerformanceButtonStyle"
+                        android:onClick="fourRunB"
+                        android:text="@string/four_run" />
+
+                    <Button
+                        style="@style/PerformanceButtonStyle"
+                        android:onClick="sixRunB"
+                        android:text="@string/six_run" />
+
+
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <Button
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="16dp"
+        android:onClick="playAgain"
+        android:background="@drawable/button_round"
+        android:textColor="#FF0000"
+        android:text="@string/reset_btn" />
+
+</LinearLayout>
